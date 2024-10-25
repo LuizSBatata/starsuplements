@@ -27,6 +27,41 @@
             
         }
         
+        .btn-2 {
+    letter-spacing: 0;
+}
+
+.btn-2:hover,
+.btn-2:active {
+  letter-spacing: 5px;
+}
+
+.btn-2:after,
+.btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(#fff, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-2:hover:after,
+.btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 70%;
+}
+
+.btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
         
     </style>
 </head>
@@ -37,6 +72,8 @@
             <img src="Imagem.png">
             </div>
         <h1>Star Suplements Store</h1>
+        <a href="https://twitter.com/Dave_Conner" class="btn btn-2">Hover</a> 
+        
         <h2> Uma loja para aqueles que necessitam de um up em seus animais.
             Aqui na STAR SUPLEMENTS®️ você encontra de tudo para seu bovino, suíno, equíno, e outros animais variados.
         </h2>
